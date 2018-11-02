@@ -3,3 +3,9 @@
 [![Coverage Status](https://coveralls.io/repos/github/DavidCai1993/cidr-cli/badge.svg?branch=master)](https://coveralls.io/github/DavidCai1993/cidr-cli?branch=master)
 
 A tiny cli tool to get useful IP address information from a CIDR.
+
+## Installation
+
+```
+go get -u -v github.com/DavidCai1993/cidr-cli
+```

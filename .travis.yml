@@ -14,4 +14,4 @@ before_install:
   - go get github.com/mattn/goveralls
 script:
   - go test -coverprofile=cidr.coverprofile ./cidr
-  - goveralls -coverprofile=cidr.coverprofile -service=travis-ci ./cidr
+  - goveralls -coverprofile=cidr.coverprofile -service=travis-ci
