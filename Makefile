@@ -3,7 +3,7 @@ test:
 
 cover:
 	rm -rf *.coverprofile
-	go test -coverprofile=cidr.coverprofile -v -race
+	go test -coverprofile=cidr.coverprofile -v -race ./cidr
 	gover
 	go tool cover -html=cidr.coverprofile
 	rm -rf *.coverprofile

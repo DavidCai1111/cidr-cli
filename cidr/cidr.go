@@ -10,9 +10,9 @@ type IPAddressInfo struct {
 	IPAvailable      int    `json:"IPAvailable"`
 	NetID            string `json:"netID"`
 	Mask             string `json:"mask"`
-	FirstIPAvailable string
-	LastIPAvailable  string
-	Boardcast        string
+	FirstIPAvailable string `json:"-"`
+	LastIPAvailable  string `json:"-"`
+	Boardcast        string `json:"-"`
 }
 
 // Parse - Parse the given CIDR to IP adress information
