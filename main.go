@@ -1,13 +1,24 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"log"
 
 	"github.com/DavidCai1993/cidr-cli/cidr"
 )
 
 func main() {
-	_, err := cidr.Parse("192.168.23.35/21")
+	result, err := cidr.Parse("192.168.23.35/21")
 
-	fmt.Println(err)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	b, err := json.Marshal(result)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	fmt.Println(string(b))
 }

@@ -1,5 +1,5 @@
 test:
-	go test -v -race
+	go test -v -race ./cidr
 
 cover:
 	rm -rf *.coverprofile

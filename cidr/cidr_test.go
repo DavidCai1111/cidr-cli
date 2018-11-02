@@ -15,7 +15,7 @@ func TestNextIP(t *testing.T) {
 
 	require.NotEmpty(ip)
 
-	nextIP := cidr.NextIP(&ip)
+	nextIP := cidr.NextIP(&ip, 1)
 
 	require.Equal("127.0.0.2", nextIP.String())
 }
